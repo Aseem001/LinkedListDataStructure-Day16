@@ -15,11 +15,10 @@ namespace LinkedListDataStructure
             LinkedList linkedList = new LinkedList();
             linkedList.InsertAtLast(56);
             linkedList.InsertAtLast(30);
-            linkedList.InsertAtLast(70);
-            linkedList.InsertAtLast(90);
+            linkedList.InsertAtLast(30);
+            linkedList.InsertAtLast(30);
             linkedList.Display();
-            linkedList.RemoveLastNode();
-            linkedList.Display();
+            linkedList.SearchFor(30);                                 
             Console.ReadKey();
         }
     }
