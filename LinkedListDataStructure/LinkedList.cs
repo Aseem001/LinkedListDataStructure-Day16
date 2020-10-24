@@ -14,7 +14,7 @@ namespace LinkedListDataStructure
         public Node head;
 
         /// <summary>
-        /// UC 1 : Inserts newData at the last or end of linked list
+        /// UC 1&3 : Inserts newData at the last or end of linked list
         /// </summary>
         /// <param name="newData">The new data.</param>
         public void InsertAtLast(int newData)
@@ -47,6 +47,20 @@ namespace LinkedListDataStructure
         }
 
         /// <summary>
+        /// UC 2 : Inserts newData at beginning of linked list.
+        /// </summary>
+        /// <param name="newData">The new data.</param>
+        public void InsertAtFront(int newData)
+        {
+            Node newNode = new Node(newData);
+            /// Linking the newly created node to the current head
+            newNode.next = this.head;
+            /// Updating the current head to newNode so head node changes to newNode
+            this.head = newNode;
+            Console.WriteLine($"Inserted at linked list beginning :{newNode.data}");
+        }
+
+        /// <summary>
         /// Displays the contents of linked list.
         /// </summary>
         public void Display()
@@ -58,12 +72,13 @@ namespace LinkedListDataStructure
             }
             else
             {
-                Console.Write("\nLinked list serialized contents: ");
+                Console.Write("Linked list serialized contents: ");
                 while(temp!=null)
                 {
                     Console.Write(temp.data+" ");
                     temp = temp.next;
                 }
+                Console.WriteLine("\n");
             }
         }
     }
