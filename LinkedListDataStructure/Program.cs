@@ -16,7 +16,7 @@ namespace LinkedListDataStructure
             linkedList.Display();
             linkedList.InsertAtLast(30);
             linkedList.Display();
-            linkedList.InsertAtLast(70);
+            linkedList.InsertAtLast(70);            
             linkedList.Display();
             Console.ReadKey();
         }
