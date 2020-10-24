@@ -10,14 +10,14 @@ namespace LinkedListDataStructure
     class Program
     {
         static void Main(string[] args)
-        {
-            /// UC 7
+        {           
             LinkedList linkedList = new LinkedList();
             linkedList.InsertAtLast(56);
             linkedList.InsertAtLast(30);
+            linkedList.InsertAtLast(40);
             linkedList.InsertAtLast(70);
             linkedList.Display();
-            linkedList.InsertBetween(30,70,40);  
+            linkedList.RemoveNode(40);
             linkedList.Display();
             Console.ReadKey();
         }
